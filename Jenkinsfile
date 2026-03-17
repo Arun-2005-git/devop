@@ -1,13 +1,13 @@
 pipeline {
-  ant agent 
-  stages {
+  any agent 
+  Stages {
     stage('clone') {
       steps {
         github url : 'https://github.com/Arun-2005-git/devop.git'
         branch : 'main'
       }
     }
-    stage('Run Script'){
+    Stage('Run Script'){
       step {
         sh 'chmod +x script.sh'
         sh './script.sh'

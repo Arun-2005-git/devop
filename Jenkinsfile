@@ -1,14 +1,14 @@
-Pipeline {
+pipeline {
   any agent
   Stages {
     Stage('clone') {
-      steps {
+      Steps {
         github url : 'https://github.com/Arun-2005-git/devop.git'
         branch : 'main'
       }
     }
     Stage('Run Script'){
-      step {
+      Step {
         sh 'chmod +x script.sh'
         sh './script.sh'
       }

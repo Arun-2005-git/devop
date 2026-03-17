@@ -1,5 +1,5 @@
 Pipeline {
-  any agent 
+  anyagent 
   Stages {
     stage('clone') {
       steps {

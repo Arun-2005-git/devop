@@ -1,7 +1,7 @@
 Pipeline {
   Any Agent
   Stages {
-    stage('clone') {
+    Stage('clone') {
       steps {
         github url : 'https://github.com/Arun-2005-git/devop.git'
         branch : 'main'
